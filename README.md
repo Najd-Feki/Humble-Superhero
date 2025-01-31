@@ -76,6 +76,12 @@ Navigate to the frontend directory:
 cd humble-superhero-front
 ```
 
+Add .env file with the following for the endpoint url:
+
+```bash
+VITE_API=http://localhost:3000/superheroes
+```
+
 Install dependencies:
 
 ```bash
