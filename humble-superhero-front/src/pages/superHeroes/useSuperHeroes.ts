@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { ISuperhero } from "../../types/ISuperhero";
 
 const useSuperHeroes = () => {
-  const endpoint = import.meta.env.VITE_API;
+  const endpoint =
+    import.meta.env.VITE_API || "http://localhost:3000/superheroes";
   const [superheroes, setSuperheroes] = useState<ISuperhero[]>([]);
   const [isFormOpen, setIsFormOpen] = useState<boolean>(false);
   const [serverResponse, setServerResponse] = useState<{
